@@ -99,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="cell-1" class="cell" data-vscode="{&quot;languageId&quot;:&quot;yaml&quot;}" data-execution_count="166">
+<div id="cell-1" class="cell" data-execution_count="166">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Title: Lab_1</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author: Emily_Goodman</span>
@@ -123,16 +123,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-2" class="cell" data-execution_count="9">
+<div id="cell-2" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pip install plotnine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Collecting plotnineNote: you may need to restart the kernel to use updated packages.
-
-  Downloading plotnine-0.13.6-py3-none-any.whl.metadata (8.9 kB)
+<pre><code>Requirement already satisfied: plotnine in c:\users\emily\anaconda3.1\lib\site-packages (0.13.6)
 Requirement already satisfied: matplotlib&gt;=3.7.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (3.8.4)
 Requirement already satisfied: pandas&lt;3.0.0,&gt;=2.1.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (2.2.2)
-Collecting mizani~=0.11.0 (from plotnine)
-  Downloading mizani-0.11.4-py3-none-any.whl.metadata (4.8 kB)
+Requirement already satisfied: mizani~=0.11.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (0.11.4)
 Requirement already satisfied: numpy&gt;=1.23.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (1.26.4)
 Requirement already satisfied: scipy&gt;=1.7.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (1.13.1)
 Requirement already satisfied: statsmodels&gt;=0.14.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (0.14.2)
@@ -148,27 +145,11 @@ Requirement already satisfied: tzdata in c:\users\emily\anaconda3.1\lib\site-pac
 Requirement already satisfied: pytz&gt;=2020.1 in c:\users\emily\anaconda3.1\lib\site-packages (from pandas&lt;3.0.0,&gt;=2.1.0-&gt;plotnine) (2024.1)
 Requirement already satisfied: patsy&gt;=0.5.6 in c:\users\emily\anaconda3.1\lib\site-packages (from statsmodels&gt;=0.14.0-&gt;plotnine) (0.5.6)
 Requirement already satisfied: six in c:\users\emily\anaconda3.1\lib\site-packages (from patsy&gt;=0.5.6-&gt;statsmodels&gt;=0.14.0-&gt;plotnine) (1.16.0)
-Downloading plotnine-0.13.6-py3-none-any.whl (1.3 MB)
-   ---------------------------------------- 0.0/1.3 MB ? eta -:--:--
-   ---------------------------------------- 0.0/1.3 MB ? eta -:--:--
-   - -------------------------------------- 0.1/1.3 MB 1.6 MB/s eta 0:00:01
-   -------------------- ------------------- 0.7/1.3 MB 8.5 MB/s eta 0:00:01
-   ----------------------------- ---------- 0.9/1.3 MB 8.5 MB/s eta 0:00:01
-   ----------------------------------- ---- 1.1/1.3 MB 6.5 MB/s eta 0:00:01
-   ---------------------------------------  1.3/1.3 MB 6.3 MB/s eta 0:00:01
-   ---------------------------------------- 1.3/1.3 MB 5.5 MB/s eta 0:00:00
-Downloading mizani-0.11.4-py3-none-any.whl (127 kB)
-   ---------------------------------------- 0.0/127.4 kB ? eta -:--:--
-   ---------------------------------------- 127.4/127.4 kB 7.3 MB/s eta 0:00:00
-Installing collected packages: mizani, plotnine
-Successfully installed mizani-0.11.4 plotnine-0.13.6
-Collecting plotnineNote: you may need to restart the kernel to use updated packages.
-
-  Downloading plotnine-0.13.6-py3-none-any.whl.metadata (8.9 kB)
+Note: you may need to restart the kernel to use updated packages.
+Requirement already satisfied: plotnine in c:\users\emily\anaconda3.1\lib\site-packages (0.13.6)
 Requirement already satisfied: matplotlib&gt;=3.7.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (3.8.4)
 Requirement already satisfied: pandas&lt;3.0.0,&gt;=2.1.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (2.2.2)
-Collecting mizani~=0.11.0 (from plotnine)
-  Downloading mizani-0.11.4-py3-none-any.whl.metadata (4.8 kB)
+Requirement already satisfied: mizani~=0.11.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (0.11.4)
 Requirement already satisfied: numpy&gt;=1.23.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (1.26.4)
 Requirement already satisfied: scipy&gt;=1.7.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (1.13.1)
 Requirement already satisfied: statsmodels&gt;=0.14.0 in c:\users\emily\anaconda3.1\lib\site-packages (from plotnine) (0.14.2)
@@ -184,33 +165,20 @@ Requirement already satisfied: tzdata in c:\users\emily\anaconda3.1\lib\site-pac
 Requirement already satisfied: pytz&gt;=2020.1 in c:\users\emily\anaconda3.1\lib\site-packages (from pandas&lt;3.0.0,&gt;=2.1.0-&gt;plotnine) (2024.1)
 Requirement already satisfied: patsy&gt;=0.5.6 in c:\users\emily\anaconda3.1\lib\site-packages (from statsmodels&gt;=0.14.0-&gt;plotnine) (0.5.6)
 Requirement already satisfied: six in c:\users\emily\anaconda3.1\lib\site-packages (from patsy&gt;=0.5.6-&gt;statsmodels&gt;=0.14.0-&gt;plotnine) (1.16.0)
-Downloading plotnine-0.13.6-py3-none-any.whl (1.3 MB)
-   ---------------------------------------- 0.0/1.3 MB ? eta -:--:--
-   ---------------------------------------- 0.0/1.3 MB ? eta -:--:--
-   - -------------------------------------- 0.1/1.3 MB 1.6 MB/s eta 0:00:01
-   -------------------- ------------------- 0.7/1.3 MB 8.5 MB/s eta 0:00:01
-   ----------------------------- ---------- 0.9/1.3 MB 8.5 MB/s eta 0:00:01
-   ----------------------------------- ---- 1.1/1.3 MB 6.5 MB/s eta 0:00:01
-   ---------------------------------------  1.3/1.3 MB 6.3 MB/s eta 0:00:01
-   ---------------------------------------- 1.3/1.3 MB 5.5 MB/s eta 0:00:00
-Downloading mizani-0.11.4-py3-none-any.whl (127 kB)
-   ---------------------------------------- 0.0/127.4 kB ? eta -:--:--
-   ---------------------------------------- 127.4/127.4 kB 7.3 MB/s eta 0:00:00
-Installing collected packages: mizani, plotnine
-Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
+Note: you may need to restart the kernel to use updated packages.</code></pre>
 </div>
 </div>
-<div id="cell-3" class="cell" data-execution_count="1">
+<div id="cell-3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="in-task-one-the-aesthetics-maped-are-income-as-the-x-variable-life-expectancy-as-the-y-variable-population-as-the-size-variable-and-region-of-map-as-the-color-variable.-the-data-is-also-filtered-to-only-show-data-for-the-yer-2010.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot." class="level3">
 <h3 class="anchored" data-anchor-id="in-task-one-the-aesthetics-maped-are-income-as-the-x-variable-life-expectancy-as-the-y-variable-population-as-the-size-variable-and-region-of-map-as-the-color-variable.-the-data-is-also-filtered-to-only-show-data-for-the-yer-2010.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot.">In Task one the aesthetics maped are Income as the x variable, Life expectancy as the y variable, Population as the size variable, and Region of map as the color variable. The data is also filtered to only show data for the yer 2010. They are mapped as a scatter plot with size as a variable also known as a bubble plot.</h3>
-<div id="cell-6" class="cell" data-execution_count="4">
+<div id="cell-6" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>q1data<span class="op">=</span> pd.read_csv(<span class="st">"data\q1data.csv"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>q1data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>&lt;positron-console-cell-4&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
+<pre><code>&lt;positron-console-cell-3&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -298,11 +266,97 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-7" class="cell" data-execution_count="157">
+<div id="cell-7" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data2010 <span class="op">=</span> q1data[q1data[<span class="st">'year'</span>]<span class="op">==</span><span class="dv">2010</span>]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data2010<span class="op">=</span>data2010.sort_values(by<span class="op">=</span><span class="st">'income'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data2010<span class="op">=</span>data2010.sort_values(by<span class="op">=</span><span class="st">'income'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>data2010.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">income</th>
+<th data-quarto-table-cell-role="th">life_exp</th>
+<th data-quarto-table-cell-role="th">population</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">four_regions</th>
+<th data-quarto-table-cell-role="th">six_regions</th>
+<th data-quarto-table-cell-role="th">eight_regions</th>
+<th data-quarto-table-cell-role="th">world_bank_region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">101</td>
+<td>108000.0</td>
+<td>81.3</td>
+<td>508000.0</td>
+<td>2010</td>
+<td>Luxembourg</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">142</td>
+<td>99100.0</td>
+<td>73.9</td>
+<td>1860000.0</td>
+<td>2010</td>
+<td>Qatar</td>
+<td>asia</td>
+<td>middle_east_north_africa</td>
+<td>asia_west</td>
+<td>Middle East &amp; North Africa</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">154</td>
+<td>81400.0</td>
+<td>83.1</td>
+<td>5130000.0</td>
+<td>2010</td>
+<td>Singapore</td>
+<td>asia</td>
+<td>east_asia_pacific</td>
+<td>east_asia_pacific</td>
+<td>East Asia &amp; Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">24</td>
+<td>69400.0</td>
+<td>73.9</td>
+<td>389000.0</td>
+<td>2010</td>
+<td>Brunei</td>
+<td>asia</td>
+<td>east_asia_pacific</td>
+<td>east_asia_pacific</td>
+<td>East Asia &amp; Pacific</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">114</td>
+<td>64900.0</td>
+<td>79.2</td>
+<td>35600.0</td>
+<td>2010</td>
+<td>Monaco</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div id="cell-8" class="cell" data-execution_count="158">
+</div>
+</div>
+<div id="cell-8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>colors<span class="op">=</span> {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'americas'</span>: <span class="st">'#2bf528'</span>,</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'africa'</span>: <span class="st">'#60e1fb'</span>,</span>
@@ -310,7 +364,7 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'asia'</span>: <span class="st">'#f22a42'</span></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-9" class="cell" data-execution_count="159">
+<div id="cell-9" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(ggplot(data2010,</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>       aes(</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">'income'</span>,</span>
@@ -342,17 +396,13 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-10" class="cell" data-execution_count="57">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(ggplot(data2010,</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>aes(</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"income"</span>,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"four_regions"</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_density()</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> scale_fill_manual(values<span class="op">=</span>colors)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-10" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(ggplot(data2010, aes(x <span class="op">=</span> <span class="st">"income"</span>, y <span class="op">=</span> <span class="st">"life_exp"</span>, fill <span class="op">=</span> <span class="st">"four_regions"</span>))</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_boxplot()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="op">+</span>scale_fill_manual(values<span class="op">=</span>colors)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\emily\anaconda3.1\Lib\site-packages\plotnine\layer.py:284: PlotnineWarning: stat_density : Removed 2 rows containing non-finite values.</code></pre>
+<pre><code>C:\Users\emily\anaconda3.1\Lib\site-packages\plotnine\layer.py:284: PlotnineWarning: stat_boxplot : Removed 2 rows containing non-finite values.</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -362,17 +412,17 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 </div>
 </div>
 </div>
-<p>A reason why this plot wont work is because it doesn’t follow the geometry of the map we are try to copy. It also only shows 2 out of the four aesthetics we are trying to map. Overall it is a poor way to plot the data since it lacks the story we are trying to show.</p>
+<p>The boxplot above shows the relationship between income and life_exp seperated out by region. However the down side of this plot is that income is a continous value and by seperating it out into boxplot you are not showing the full extent of the data. It is forcing the data into bins thus limiting the story shown.</p>
 </section>
 <section id="task-2" class="level1">
 <h1>Task 2</h1>
 <section id="in-task-two-the-aesthetics-maped-are-exports-as-the-x-variable-imports-as-the-y-variable-energy-as-the-size-variable-and-region-of-map-as-the-color-variable.-additionally-the-data-is-filtered-by-the-year-1997.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot." class="level3">
 <h3 class="anchored" data-anchor-id="in-task-two-the-aesthetics-maped-are-exports-as-the-x-variable-imports-as-the-y-variable-energy-as-the-size-variable-and-region-of-map-as-the-color-variable.-additionally-the-data-is-filtered-by-the-year-1997.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot.">In Task two the aesthetics maped are Exports as the x variable, Imports as the y variable, Energy as the size variable, and Region of map as the color variable. Additionally, the data is filtered by the year 1997. They are mapped as a scatter plot with size as a variable also known as a bubble plot.</h3>
-<div id="cell-14" class="cell" data-execution_count="134">
+<div id="cell-14" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>q2data<span class="op">=</span> pd.read_csv(<span class="st">"data\q2data.csv"</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>q2data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>&lt;positron-console-cell-134&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
+<pre><code>&lt;positron-console-cell-18&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -460,7 +510,7 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-15" class="cell" data-execution_count="153">
+<div id="cell-15" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>data1997 <span class="op">=</span> q2data[q2data[<span class="st">'year'</span>]<span class="op">==</span><span class="dv">1997</span>]</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>data1997[<span class="st">"energy"</span>] <span class="op">=</span> data1997[<span class="st">"energy"</span>].astype(<span class="bu">str</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>data1997[<span class="st">"energy"</span>] <span class="op">=</span> data1997[<span class="st">'energy'</span>].<span class="bu">str</span>.replace(<span class="st">'k'</span>,<span class="st">""</span>).astype(<span class="bu">float</span>)<span class="op">*</span><span class="dv">1000</span></span>
@@ -468,13 +518,98 @@ Successfully installed mizani-0.11.4 plotnine-0.13.6</code></pre>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>data2</span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>data2[<span class="st">'energy'</span>]<span class="op">=</span> data2[<span class="st">'energy'</span>].astype(<span class="bu">float</span>)</span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>data2<span class="op">=</span>data2.sort_values(by<span class="op">=</span><span class="st">'energy'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>data2.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>&lt;positron-console-cell-153&gt;:6: SettingWithCopyWarning: 
+<pre><code>&lt;positron-console-cell-19&gt;:6: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">imports</th>
+<th data-quarto-table-cell-role="th">exports</th>
+<th data-quarto-table-cell-role="th">energy</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">four_regions</th>
+<th data-quarto-table-cell-role="th">six_regions</th>
+<th data-quarto-table-cell-role="th">eight_regions</th>
+<th data-quarto-table-cell-role="th">world_bank_region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">99</td>
+<td>51.1</td>
+<td>43.9</td>
+<td>9170000.0</td>
+<td>1997</td>
+<td>Kuwait</td>
+<td>asia</td>
+<td>middle_east_north_africa</td>
+<td>asia_west</td>
+<td>Middle East &amp; North Africa</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">84</td>
+<td>38.1</td>
+<td>33.8</td>
+<td>9040000.0</td>
+<td>1997</td>
+<td>Iceland</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>38.1</td>
+<td>40.0</td>
+<td>7950000.0</td>
+<td>1997</td>
+<td>Canada</td>
+<td>americas</td>
+<td>america</td>
+<td>america_north</td>
+<td>North America</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">196</td>
+<td>12.3</td>
+<td>10.5</td>
+<td>7800000.0</td>
+<td>1997</td>
+<td>United States</td>
+<td>americas</td>
+<td>america</td>
+<td>america_north</td>
+<td>North America</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>57.4</td>
+<td>50.5</td>
+<td>7290000.0</td>
+<td>1997</td>
+<td>Brunei</td>
+<td>asia</td>
+<td>east_asia_pacific</td>
+<td>east_asia_pacific</td>
+<td>East Asia &amp; Pacific</td>
+</tr>
+</tbody>
+</table>
+
+</div>
 </div>
 </div>
 <div id="cell-16" class="cell" data-execution_count="154">
@@ -504,10 +639,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
-<div id="cell-17" class="cell" data-execution_count="160">
+<div id="cell-17" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>(ggplot(data2,</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>aes(</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"energy"</span>,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"exports"</span>,</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"four_regions"</span></span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>))</span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_density()</span>
@@ -521,18 +656,18 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
-<p>A reason why we shouldn’t use the plot above is because it only shows energy consumption counts by country. It doesnt show every aesthetics we are trying to copy from the orignal graph. It lacks crucial information that tells the whole story.</p>
+<p>A reason why we shouldn’t use the plot above is because it only shows export counts by country. It doesn’t show how exports change based on imports and energy consumption. It doesnt show every aesthetics we are trying to copy from the orignal graph. It lacks crucial information that tells the whole story.</p>
 </section>
 </section>
 <section id="task-3" class="level1">
 <h1>Task 3</h1>
 <section id="in-task-three-the-aesthetics-maped-are-indviduals-using-the-internet-as-the-x-variable-gdp-as-the-y-variable-income-as-the-size-variable-and-region-of-map-as-the-color-variable.-another-aesthetic-is-the-year-2001-so-the-data-is-filtered-to-only-show-data-from-that-year.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot." class="level3">
 <h3 class="anchored" data-anchor-id="in-task-three-the-aesthetics-maped-are-indviduals-using-the-internet-as-the-x-variable-gdp-as-the-y-variable-income-as-the-size-variable-and-region-of-map-as-the-color-variable.-another-aesthetic-is-the-year-2001-so-the-data-is-filtered-to-only-show-data-from-that-year.-they-are-mapped-as-a-scatter-plot-with-size-as-a-variable-also-known-as-a-bubble-plot.">In Task Three the aesthetics maped are Indviduals using the Internet as the x variable, GDP as the y variable, Income as the size variable, and Region of map as the color variable. Another aesthetic is the year 2001, so the data is filtered to only show data from that year. They are mapped as a scatter plot with size as a variable also known as a bubble plot.</h3>
-<div id="cell-21" class="cell" data-execution_count="109">
+<div id="cell-21" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>q3<span class="op">=</span> pd.read_csv(<span class="st">"data\q3data.csv"</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>q3.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>&lt;positron-console-cell-109&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
+<pre><code>&lt;positron-console-cell-24&gt;:1: SyntaxWarning: invalid escape sequence '\q'</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -620,13 +755,99 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
-<div id="cell-22" class="cell" data-execution_count="155">
+<div id="cell-22" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>q2001 <span class="op">=</span> q3[q3[<span class="st">'year'</span>]<span class="op">==</span><span class="dv">2001</span>]</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>q301<span class="op">=</span> q2001.dropna()</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>q301</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>q301<span class="op">=</span>q301.sort_values(by<span class="op">=</span><span class="st">'internet_users'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>q301<span class="op">=</span>q301.sort_values(by<span class="op">=</span><span class="st">'internet_users'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>q301.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">internet_users</th>
+<th data-quarto-table-cell-role="th">gdp</th>
+<th data-quarto-table-cell-role="th">income</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">four_regions</th>
+<th data-quarto-table-cell-role="th">six_regions</th>
+<th data-quarto-table-cell-role="th">eight_regions</th>
+<th data-quarto-table-cell-role="th">world_bank_region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">87</td>
+<td>79.1</td>
+<td>38700.0</td>
+<td>41500.0</td>
+<td>2001</td>
+<td>Iceland</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">145</td>
+<td>72.8</td>
+<td>83700.0</td>
+<td>58700.0</td>
+<td>2001</td>
+<td>Norway</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">185</td>
+<td>70.6</td>
+<td>46300.0</td>
+<td>42000.0</td>
+<td>2001</td>
+<td>Sweden</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">52</td>
+<td>64.3</td>
+<td>56200.0</td>
+<td>49400.0</td>
+<td>2001</td>
+<td>Denmark</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_west</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">66</td>
+<td>62.4</td>
+<td>42000.0</td>
+<td>41500.0</td>
+<td>2001</td>
+<td>Finland</td>
+<td>europe</td>
+<td>europe_central_asia</td>
+<td>europe_east</td>
+<td>Europe &amp; Central Asia</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div id="cell-23" class="cell" data-execution_count="156">
+</div>
+</div>
+<div id="cell-23" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>(ggplot(q301,</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>       aes(</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">'internet_users'</span>,</span>
@@ -660,24 +881,27 @@ C:\Users\emily\anaconda3.1\Lib\site-packages\plotnine\layer.py:364: PlotnineWarn
 </div>
 </div>
 </div>
-<div id="cell-24" class="cell" data-execution_count="162">
+<div id="cell-24" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>(ggplot(q301,</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>aes(</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"internet_users"</span>,</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"four_regions"</span></span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_density()</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_histogram()</span>
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> scale_fill_manual(values<span class="op">=</span>colors)</span>
 <span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\emily\anaconda3.1\Lib\site-packages\plotnine\stats\stat_bin.py:109: PlotnineWarning: 'stat_bin()' using 'bins = 14'. Pick better value with 'binwidth'.</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab1.544_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="lab1.544_files/figure-html/cell-17-output-2.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This plot doesn’t work because it lack the neccessary information to show the whole story we want to describe. Right now it only shows the internet users count by count. It doesn’t take into account income and GDP. Thus, using a density plot is subpar compared to a scatter plot with size and color as variables.</p>
+<p>The histogram above shows the distribution of counts of internet users based on which country they are from. However it doesn’t fully descirbe the picture we want to see. It lacks the information showing how internet users changes based on GDP and income.</p>
 </section>
 </section>
 
